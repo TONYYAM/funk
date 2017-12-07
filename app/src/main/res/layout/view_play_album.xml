@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+    <FrameLayout
+        android:id="@+id/fl_album"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape_album_cover">
+
+        <com.yjl.funk.widget.AlbumCircleView
+            android:id="@+id/iv_album"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center"
+            app:roundAsCircle="true" />
+    </FrameLayout>
+
+    <com.yjl.funk.widget.lrc.LRCTextView
+        android:id="@+id/tv_lrc_single"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"></com.yjl.funk.widget.lrc.LRCTextView>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="?attr/actionBarSize"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:minHeight="?attr/actionBarSize">
+
+    <ImageView
+        android:id="@+id/iv_menu"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:contentDescription="@null"
+        android:scaleType="centerInside"
+        android:background="@drawable/btn_action_bg_selector"
+        android:src="@drawable/ic_menu"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:tabIndicatorColor="@android:color/white"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="fixed"
+        app:tabTextAppearance="@style/tabTextAppearance"
+        app:tabSelectedTextColor="@color/colorPrimaryDark"
+        app:tabTextColor="@android:color/white"
+        >
+    </android.support.design.widget.TabLayout>
+
+    <ImageView
+        android:id="@+id/iv_search"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="end"
+        android:contentDescription="@null"
+        android:background="@drawable/btn_action_bg_selector"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_menu_search"/>
+</FrameLayout>

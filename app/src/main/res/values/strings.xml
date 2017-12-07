@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">放克音乐</string>
+    <string name="menu_settings">设置</string>
+    <string name="menu_about">关于放克音乐</string>
+    <string name="menu_exit">退出放克音乐</string>
+    <string name="billboard_tag">Billboard</string>
+    <string name="bill_tag">音乐排行</string>
+    <string name="new_album_tag">新碟上架</string>
+    <string name="update_everyday">每\n日\n更\n新</string>
+    <string name="playing">正\n在\n播\n放</string>
+    <string name="play_all">播放全部</string>
+    <string name="multiple_choice">多选</string>
+    <string name="lrc_label">暂无歌词</string>
+</resources>

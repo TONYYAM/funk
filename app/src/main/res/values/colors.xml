@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#a000d4</color>
+    <color name="colorPrimaryDark">#1AC0AF</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="btn_press_white">#50FFFFFF</color>
+    <color name="theme_bg">#EEEEFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="ripple_color">#50949292</color>
+    <color name="text_black">#2e2e2e</color>
+    <color name="text_gray">#8c8c8c</color>
+    <color name="divider_color">#eeeeee</color>
+    <color name="text_hint">#80FFFFFF</color>
+    <color name="lrc_normal_text_color">#FFFFFF</color>
+    <color name="lrc_current_text_color">#FF4081</color>
+    <color name="lrc_timeline_text_color">#FFFFFF</color>
+    <color name="lrc_timeline_color">#FFFFFF</color>
+    <color name="lrc_time_text_color">#FFFFFF</color>
+</resources>

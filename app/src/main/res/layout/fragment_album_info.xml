@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/theme_bg"
+              android:orientation="vertical">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/theme_bg"
+            android:elevation="0dp">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:collapsedTitleTextAppearance="@style/ToolbarTitleAppearance"
+                app:contentScrim="@drawable/toolbar_bg"
+                app:expandedTitleTextAppearance="@style/CollapsingToolbarTitleAppearance"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:foreground="#80000000">
+
+                        <com.yjl.funk.imageloader.frescoview.FrescoImageView
+                            android:id="@+id/iv_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:viewAspectRatio="1.35"
+                            />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp"
+                        android:paddingTop="?actionBarSize">
+
+                        <com.yjl.funk.imageloader.frescoview.FrescoImageView
+                            android:id="@+id/iv_album"
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginTop="@dimen/dp_10"
+                            />
+
+                        <LinearLayout
+                            android:id="@+id/ll_base_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="@dimen/dp_10"
+                            android:visibility="gone"
+                            >
+
+                            <TextView
+                                android:id="@+id/tv_author"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="@dimen/dp_5"
+                                android:drawableRight="@drawable/to_next_white"
+                                android:paddingLeft="@dimen/dp_5"
+                                android:paddingBottom="@dimen/dp_5"
+                                android:paddingTop="@dimen/dp_5"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:singleLine="true"
+                                android:paddingRight="20dp"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_describe"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp_5"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_info"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_5"
+                                android:drawableLeft="@drawable/ic_album_info"
+                                android:drawablePadding="@dimen/dp_5"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/dp_5"
+                                android:text="查看专辑简介"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    style="@style/CommonToolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_gravity="top"
+                    app:layout_collapseMode="pin"
+                    >
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_play_all"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@drawable/common_ripple"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:drawableLeft="@drawable/ic_play_all"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:gravity="center_vertical"
+                    android:text="@string/play_all"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_list_total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:textColor="@color/text_gray"
+                    android:textSize="10sp"/>
+
+                <TextView
+                    android:id="@+id/tv_multiple_choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/common_ripple"
+                    android:drawableLeft="@drawable/ic_multiple_choice"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_10"
+                    android:text="@string/multiple_choice"
+                    android:textColor="@color/text_black"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_song"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"></android.support.v7.widget.RecyclerView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

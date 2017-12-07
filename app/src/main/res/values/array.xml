@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+    <array name="main_tab">
+        <item>放克音乐</item>
+        <item>我的音乐</item>
+    </array>
+    <array name="artist_info_tag">
+        <item>热门歌曲</item>
+        <item>专辑</item>
+        <item>歌手信息</item>
+    </array>
+    <array name="search_tag">
+        <item>单曲</item>
+        <item>专辑</item>
+        <item>歌手</item>
+    </array>
+</resources>

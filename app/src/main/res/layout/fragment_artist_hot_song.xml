@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <include layout="@layout/view_loading"></include>
+    <LinearLayout
+        android:id="@+id/ll_play_all"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/common_ripple"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:drawableLeft="@drawable/ic_play_all"
+            android:drawablePadding="@dimen/dp_5"
+            android:gravity="center_vertical"
+            android:text="@string/play_all"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_list_total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_5"
+            android:textColor="@color/text_gray"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/tv_multiple_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/common_ripple"
+            android:drawableLeft="@drawable/ic_multiple_choice"
+            android:drawablePadding="@dimen/dp_5"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:text="@string/multiple_choice"
+            android:textColor="@color/text_black"
+            android:textSize="12sp"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_song"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

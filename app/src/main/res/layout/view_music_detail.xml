@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:divider="@drawable/divider_line_vertical"
+              android:orientation="vertical"
+              android:showDividers="middle">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:textColor="@color/text_gray"
+        android:textSize="12sp"
+       />
+
+    <TextView
+        android:id="@+id/tv_author"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@drawable/common_ripple"
+        android:drawableLeft="@drawable/ic_author"
+        android:drawablePadding="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:textColor="@color/text_gray"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tv_album"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@drawable/common_ripple"
+        android:drawableLeft="@drawable/ic_album"
+        android:drawablePadding="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:textColor="@color/text_gray"
+        android:textSize="12sp"/>
+</LinearLayout>
